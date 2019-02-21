@@ -12,7 +12,6 @@ require_relative 'models/puppy'
   end
 
   post '/puppy' do
-     @name = params[:name]
    @puppy = Puppy.new(params[:name], params[:breed], params[:age])
    erb :display_puppy
  end
